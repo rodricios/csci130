@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditional logic template</title>
+</head>
+<body>
+        {{ .FileName }}
+        {{if .Condition}}
+        <h3> {{.Number}} </h3>
+        {{else}}
+        <h3> Should not get here! </h3>
+        {{end}}
+</body>
+</html>
