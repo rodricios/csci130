@@ -16,12 +16,8 @@ func servePage(res http.ResponseWriter, req *http.Request){
     </body>`)
 }
 
-func redirectTLS(res http.ResponseWriter, req *http.Request){
-	http.Redirect(res, req, "https://127.0.0.1:10443/"+req.RequestURI, http.StatusMovedPermanently)
-}
-
 func main(){
 	http.HandleFunc("/", servePage)
 	//key and cert Im not going to upload to Github
-	http.ListenAndServeTLS(":8080", "cert.pem", "key.pem", nil)
+	http.ListenAndServeTLS(":8080", "../ocert.pem", ".//key.pem", nil)
 }
