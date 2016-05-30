@@ -1,0 +1,68 @@
+html, body, h1, form, label, input {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    border: 4px solid deepskyblue !important;
+}
+
+html, body {
+    height: 100%
+}
+
+html {
+    background-color: #AC1F2D;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    text-align: center;
+    color: #1e376c;
+    font-size: 10vw;
+    width: 100%;
+}
+
+#entry {
+    width: 70%;
+    font-size: 6vw;
+    text-align: center;
+}
+
+#btn {
+    height: 6vw;
+    width: 24vw;
+    border-radius: 20px;
+    margin: 2vw;
+    background-color: #e98a29;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: #4a83b8;
+}
+
+#btn:hover {
+    color: #248cc8;
+}
+
+h1 {
+    text-align: center;
+    color: #f47e3c;
+    font-size: 6vw;
+    width: 100%;
+}
