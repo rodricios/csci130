@@ -18,6 +18,5 @@ func servePage(res http.ResponseWriter, req *http.Request){
 
 func main(){
 	http.HandleFunc("/", servePage)
-	//key and cert Im not going to upload to Github
 	http.ListenAndServeTLS(":8080", "../ocert.pem", ".//key.pem", nil)
 }
